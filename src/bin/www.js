@@ -15,13 +15,13 @@ const error = (err) => {
 };
 
 const listening = () => {
-  figlet.text('GuiigO`s', (err, data) => {
+  figlet.text('Dechotti', (err, data) => {
     if (!err) {
       console.log(colors.red(data), '\n');
     }
 
-    logInfos(colors.bold.red('Developer'), 'Guilherme Alves');
-    logInfos(colors.bold.red('E-mail'), 'guiigos.alves@gmail.com');
+    logInfos(colors.bold.red('Base desenvoldia por'), 'guiigos');
+    logInfos(colors.bold.red('Projeto por'), 'GusDechotti');
 
     logInfos(colors.yellow(`Server running on port ${process.env.PORT}`));
   });

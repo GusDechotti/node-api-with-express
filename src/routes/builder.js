@@ -10,6 +10,7 @@ const V2 = require('./v.2');
 module.exports = (app) => {
   app
     .use(Auth)
+    //.use('/api/', V1, V2)
     .use('/api/', protected, V1, V2)
     .use(NotFound)
     .use(InternalServerError);
